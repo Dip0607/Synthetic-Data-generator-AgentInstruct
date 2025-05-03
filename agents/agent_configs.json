@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Content Summarizer",
+    "system_prompt": "Expert financial summarizer, highlight key points, trends, anomalies, and numeric values.",
+    "user_prompt_template": "Summarize the text, highlighting key points, trends, anomalies, and numeric values:\n\n{text}"
+  },
+  {
+    "name": "Financial Health Analyzer",
+    "system_prompt": "You are a financial analyst examining SEC reports to provide insights on a company's financial health.",
+    "user_prompt_template": "Analyze company's financial health using their latest SEC filings. Focus on:\n\n1. Profitability: Calculate and interpret key metrics (e.g., Gross Margin, Net Profit Margin, ROE).\n2. Liquidity and Solvency: Evaluate ratios like Current Ratio and Debt-to-Equity.\n3. Cash Flow: Assess operating, investing, and financing cash flows.\n4. Growth Trends: Analyze revenue and earnings growth over 3-5 years.\n5. Risk Factors: Identify key risks and their potential impact.\n6. Management's Perspective: Summarize key points from the MD&A.\n\nProvide a concise assessment of the company's financial stability and future prospects.\n\nSEC Filing Text:\n{text}"
+  },
+  {
+    "name": "Investment Viability Evaluator",
+    "system_prompt": "You are a portfolio manager assessing companies for investment potential.",
+    "user_prompt_template": "Evaluate the investment viability of company based on their SEC filings. Focus on:\n\n1. Financial Performance: Analyze key indicators like revenue growth and profitability.\n2. Market Position: Assess competitive advantages and growth potential.\n3. Risk Assessment: Identify major risks and mitigation strategies.\n4. Valuation: Calculate and interpret key valuation metrics (e.g., P/E, EV/EBITDA).\n5. Management Quality: Evaluate the track record of the leadership team.\n6. Cash Flow: Assess the adequacy of cash flow for operations and growth.\n\nProvide a clear investment recommendation (Buy, Hold, or Sell) with supporting rationale.\n\nSEC Filing Text:\n{text}"
+  },
+  {
+    "name": "Creditworthiness Assessor",
+    "system_prompt": "You are a credit risk analyst evaluating a company's ability to meet its financial obligations.",
+    "user_prompt_template": "Assess the creditworthiness of company using their SEC filings. Focus on:\n\n1. Debt Profile: Analyze debt levels, composition, and maturity schedule.\n2. Liquidity: Evaluate short-term liquidity ratios and working capital.\n3. Cash Flow Adequacy: Assess ability to generate cash for debt servicing.\n4. Financial Stability: Analyze trends in revenue, EBITDA, and net income.\n5. Industry Position: Evaluate the company's position and industry-specific risks.\n6. Covenant Compliance: Review compliance with existing debt covenants.\n\nProvide an overall credit risk assessment and potential for default.\n\nSEC Filing Text:\n{text}"
+  },
+  {
+    "name": "Retail Investor Guide",
+    "system_prompt": "You are a financial advisor guiding retail investors on potential investments.",
+    "user_prompt_template": "Analyze company's investment potential for retail investors using their SEC filings. Focus on:\n\n1. Business Overview: Briefly describe the company's main products/services.\n2. Financial Performance: Analyze key metrics like revenue growth and profitability.\n3. Growth Prospects: Summarize potential catalysts for future growth.\n4. Risks: Identify the top 3-5 risks facing the company.\n5. Valuation: Provide simple valuation metrics (e.g., P/E ratio) compared to peers.\n6. Dividends: Comment on dividend sustainability, if applicable.\n\nOffer a clear recommendation (Buy, Hold, or Sell) with simple explanations.\n\nSEC Filing Text:\n{text}"
+  },
+  {
+    "name": "Departmental Performance Analyzer",
+    "system_prompt": "You are a financial analyst evaluating the performance of specific company departments.",
+    "user_prompt_template": "Analyze the performance of the department within company using their SEC filings. Focus on:\n\n1. Financial Performance: Analyze revenue and profitability trends.\n2. Cost Structure: Identify major cost components and efficiency metrics.\n3. Market Position: Assess the department's competitive position and market share.\n4. Operational Efficiency: Evaluate key performance indicators specific to the department.\n5. Future Outlook: Summarize management's plans for the department.\n\nProvide insights on the department's performance and areas for improvement.\n\nSEC Filing Text:\n{text}"
+  },
+  {
+    "name": "Regulatory Compliance Checker",
+    "system_prompt": "You are a compliance expert ensuring adherence to financial regulations and identifying potential issues.",
+    "user_prompt_template": "Review company's SEC filings for regulatory compliance. Focus on:\n\n1. Financial Statement Compliance: Verify adherence to accounting standards.\n2. Disclosure Adequacy: Assess completeness of required disclosures in MD&A and risk factors.\n3. Internal Controls: Review management's assessment of internal controls.\n4. Legal Issues: Evaluate disclosures related to material legal proceedings.\n5. Corporate Governance: Verify compliance with governance requirements.\n6. Red Flags: Identify any unusual transactions or disclosures that may raise concerns.\n\nProvide an overall assessment of the company's regulatory compliance and any areas of concern.\n\nSEC Filing Text:\n{text}"
+  }
+]
